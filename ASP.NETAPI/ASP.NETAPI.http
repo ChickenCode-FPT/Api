@@ -1,0 +1,15 @@
+
+@ASP.NETAPI_HostAddress = https://localhost:7018
+
+
+GET {{ASP.NETAPI_HostAddress}}/api/restaurants
+
+###
+
+GET {{ASP.NETAPI_HostAddress}}/api/restaurants/2
+
+###
+
+GET {{ASP.NETAPI_HostAddress}}/api/restaurants
+
+###
