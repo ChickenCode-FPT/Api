@@ -13,3 +13,28 @@ GET {{ASP.NETAPI_HostAddress}}/api/restaurants/2
 GET {{ASP.NETAPI_HostAddress}}/api/restaurants
 
 ###
+
+POST {{ASP.NETAPI_HostAddress}}/api/restaurants
+Content-Type: application/json
+
+{
+  "Name":"Spicy Delight 2",
+  "Description": "A culurri",
+  "Category": "Fine Dinning",
+  "HasDelivery":true,
+  "ContactEmail":"infor@gmail.com",
+  "ContactNumber":"55-777-98",
+  "City":"Metropolis",
+  "Street": "456 Gourment Avenue",
+  "PostalCode": "54321",
+  "dishes": [
+      {
+        "name": "Nashvile Hot Chicken 1",
+        "description": "Nashvile Hot Chicken(10 pc)",
+        "price": 10.3,
+        "kiloCarlo": null
+      }
+    ]
+}
+
+###

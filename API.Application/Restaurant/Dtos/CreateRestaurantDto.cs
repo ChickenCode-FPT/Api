@@ -1,14 +1,14 @@
-﻿using System;
+﻿using API.Application.Dishs.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace API.Domain.Entities
+namespace API.Application.Restaurant.Dtos
 {
-    public class Restaurants
+   public class CreateRestaurantDto
     {
-        public int Id { get; set; }
         public string Name { get; set; } = default!;
         public string Description { get; set; } = default!;
         public string Category { get; set; } = default!;
@@ -17,7 +17,9 @@ namespace API.Domain.Entities
         public string? ContactEmail { get; set; }
         public string? ContactNumber { get; set; }
 
-        public Address? Address { get; set; }
-        public List<Dishes> Dishes { get; set; } = new();
+        public string? City { get; set; }
+        public string? Street { get; set; }
+        public string? PostalCode { get; set; }
+        public List<CreateDishsDto> Dishes { get; set; } = [];
     }
 }

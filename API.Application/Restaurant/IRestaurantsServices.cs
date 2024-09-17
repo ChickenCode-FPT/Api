@@ -7,5 +7,6 @@ namespace API.Application.Restaurant
     {
         Task<IEnumerable<RestaurantsDtos>> GetAllRestaurants();
         Task<RestaurantsDtos> GetOneRestaurants(int id);
+        Task<int> Create(CreateRestaurantDto entity);
     }
 }

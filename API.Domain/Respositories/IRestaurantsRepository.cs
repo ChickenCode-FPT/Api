@@ -11,5 +11,6 @@ namespace API.Domain.Respositories
     {
         Task<IEnumerable<Restaurants>> GetAllAsync();
         Task<Restaurants> GetOneAsync(int id);
+        Task<int> Create(Restaurants entity);
     }
 }

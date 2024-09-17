@@ -12,7 +12,7 @@ namespace Infrastructure.Persistence
     {
         
         internal DbSet<Restaurants> Restaurants { get; set; }
-        internal DbSet<Dishs> Dishs { get; set; }
+        internal DbSet<Dishes> Dishs { get; set; }
 
        
         protected override void OnModelCreating(ModelBuilder modelBuilder)

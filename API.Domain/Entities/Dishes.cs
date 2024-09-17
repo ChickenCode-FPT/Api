@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API.Domain.Entities
 {
-    public class Dishs
+    public class Dishes
     {
         public int Id { get; set; }
         public string Name { get; set; } = default!;
